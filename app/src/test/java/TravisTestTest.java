@@ -16,5 +16,6 @@ public class TravisTestTest extends TestCase {
 
     public void test_case() {
         assertEquals(true, false);
+        // failing test
     }
 }
