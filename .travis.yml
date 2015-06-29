@@ -28,10 +28,4 @@ script:
   # By default Travis-ci executes './gradlew build connectedCheck' if no 'script:' section found.
   #- ./gradlew assemble
   #- ./gradlew test --continue
-  - exit 0
-after_success:
-  on:
-    tags: true
-    all_branches: true
-    condition: "$TRAVIS_TAG =~ ^release.*$"
-      - echo "Ran Post!"
+  - if [$TRAVIS_TAG =~ ^release.*$]; then echo "success!"; fi
