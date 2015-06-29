@@ -29,7 +29,7 @@ script:
   #- ./gradlew assemble
   #- ./gradlew test --continue
   - exit 0
-post_success:
+after_success:
   on:
     tags: true
     all_branches: true
