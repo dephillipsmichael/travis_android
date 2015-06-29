@@ -29,3 +29,4 @@ script:
   #- ./gradlew assemble
   #- ./gradlew test --continue
   - if [$TRAVIS_TAG =~ ^release.*$]; then echo "success!"; fi
+  - echo "ran program"
