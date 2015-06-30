@@ -1,8 +1,8 @@
 #!/bin/sh
-
-echo "$TRAVIS_TAG"
-if [ "$TRAVIS_TAG" =~ "^release.*" ]; then
-    echo "Valid tag"
+echo "Looking for git tag $TRAVIS_TAG to contain the word \"tablet\" to do deployment"
+if [[ "$TRAVIS_TAG" =~ "tablet" ]]
+then
+  echo "Valid tag"
 else
-    echo "invalid tag"
+  echo "invalid tag"
 fi
