@@ -5,4 +5,4 @@ if [[ "$TRAVIS_TAG" =~ "tablet" ]]; then
 else
   echo "invalid tag"
 fi
-echo "done"
+echo "done2"
